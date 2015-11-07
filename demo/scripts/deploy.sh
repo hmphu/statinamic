@@ -1,6 +1,11 @@
 #!/usr/bin/env bash
 set -o errexit #abort if any command fails
 
+pwd
+ls .
+ls demo
+ls demo/dist
+
 main() {
 	deploy_directory=${GIT_DEPLOY_DIR:-dist}
 	deploy_branch=${GIT_DEPLOY_BRANCH:-gh-pages}
